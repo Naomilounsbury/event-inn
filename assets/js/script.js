@@ -44,11 +44,11 @@ var getWeather = function () {
 
 
 //need one function to call both at the same time
-    var doBoth = function(){
+    var fetchEventWeatherData = function(){
         getEvent()
         getWeather()
     }
 
 
 
-button.addEventListener('submit', doBoth)
+button.addEventListener('submit', fetchEventWeatherData)
