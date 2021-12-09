@@ -14,7 +14,7 @@ var getWeather = function () {
     //why isn't this working? is it not authenticated? 
     var getEvent = function (event) {
         event.preventDefault()
-        var eventbriteUrl = "https://app.ticketmaster.com/discovery/v2/events.json?apikey=E2I7ya5FHRR8ZB0ACIGyv02xtzcbvJSw"
+        var eventbriteUrl = "https://app.ticketmaster.com/discovery/v2/events.json?city=miami?apikey=E2I7ya5FHRR8ZB0ACIGyv02xtzcbvJSw"
         fetch(eventbriteUrl)
             .then(function (response) {
                 return response.json();

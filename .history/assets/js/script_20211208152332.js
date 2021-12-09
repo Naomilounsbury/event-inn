@@ -14,13 +14,12 @@ var getWeather = function () {
     //why isn't this working? is it not authenticated? 
     var getEvent = function (event) {
         event.preventDefault()
-        var eventbriteUrl = "https://app.ticketmaster.com/discovery/v2/events.json?apikey=E2I7ya5FHRR8ZB0ACIGyv02xtzcbvJSw"
+        var eventbriteUrl = "https://www.eventbriteapi.com/v3/users/me/?token=LMIDU5RTJRH3MM6FEHRV"
         fetch(eventbriteUrl)
             .then(function (response) {
                 return response.json();
             })
             .then(function (data) {
-                console.log(data)
                 for (var i = 0; i < data.length; i++) {
                     // Create a list element
                     var listItem = document.createElement('li');
@@ -28,7 +27,7 @@ var getWeather = function () {
                     // Set the text of the list element to the JSON response's .html_url property
                     listItem.textContent = data[i].html_url;
                     eventList.appendChild(listItem);
-                    
+                    console.log(data[i].html_url)
                 }
 
             });
