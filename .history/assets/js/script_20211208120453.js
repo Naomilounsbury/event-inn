@@ -1,2 +1,0 @@
-var requestEventbriteUrl =
-var requestOpenWeatherUrl
