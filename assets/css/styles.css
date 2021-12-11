@@ -46,3 +46,6 @@ h1 {
     cursor: pointer;
     background-color: blue;
 }
+li{
+    padding:16px;
+}
