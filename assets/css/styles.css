@@ -1,6 +1,6 @@
 *{
     color: white;
-    background-color:rgb(48, 48, 48);
+    background-color:rgb(65,65,65);
 }
 
 /* styling for main header */
@@ -20,6 +20,7 @@ h1 {
 .container{
      background-image: url(../images/concertimage.jpg);
      height: 400px;
+     width: 100%;
      background-size: cover;
      background-position: center;
      position: relative;
@@ -29,7 +30,7 @@ h1 {
  /*Styling on the search form*/
  .form{
     border: 4px solid blue;
-    background-color:rgb(48, 48, 48);
+    background-color:rgb(65,65,65);
     padding: 20px;
     width: 400px;
     bottom: 120px;
@@ -39,6 +40,7 @@ h1 {
     font-weight: bold;
     text-align:center;
     margin: 5%;
+    flex-wrap: wrap;
   }
 
   /*button styling*/
