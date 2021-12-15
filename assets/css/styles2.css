@@ -1,0 +1,12 @@
+*{
+    color: white;
+    background-color:rgb(65, 65, 65);
+}
+
+/* styling for main header */
+h1 {
+    padding: 25px;
+    margin: 2%;
+    text-align: center;
+    border: blue 6px solid;
+}
