@@ -13,23 +13,23 @@
 <body>
     <header>
         <h1>Events Lookup</h1>
-    <nav>
-        <!--List Element-->
-        <ul>
-            <li>
-             <a href="#about-us">About Us</a>
-            </li>
+        <nav>
+            <!--List Element-->
+            <ul>
+                <li>
+                    <a href="#about-us">About Us</a>
+                </li>
 
-            <li>
-                <a href="#weather">Weather</a>
-            </li>
+                <li>
+                    <a href="#weather">Weather</a>
+                </li>
 
-            <li>
-             <a href="#events">Events</a>
-         </li>
-        
-        </ul>
-    </nav>
+                <li>
+                    <a href="#events">Events</a>
+                </li>
+
+            </ul>
+        </nav>
     </header>
 
     <div class="container">
@@ -44,20 +44,26 @@
     <div class="about-us" id="about-us">
         <h3>About Us</h3>
         <h4>Planning your trips just got easier!</h4>
-        <p>We understand that planning for your travel can be stressful enough. Going through multiple websites to find the events you want to attend, and booking your hotels can be time consuming. 
-            Our websie is designed to make your user experience much simpler and easier by being able to access it all in one place. 
-            Just enter the name of the city you are planning to travel to, and we will give you suggestions of all the events in that city.
-            After chosing your desired event, you will be able to see nearby hotels and availability. 
+        <p>We understand that planning for your travel can be stressful enough. Going through multiple websites to find
+            the events you want to attend, and booking your hotels can be time consuming.
+            Our websie is designed to make your user experience much simpler and easier by being able to access it all
+            in one place.
+            Just enter the name of the city you are planning to travel to, and we will give you suggestions of all the
+            events in that city.
+            After chosing your desired event, you will be able to see nearby hotels and availability.
         </p>
     </div>
 
-    <div class="weather"></div>
-    <div class="event-list">
-        Check out these events
+    <div class="weather" id="weather"></div>
+    <div class="container">
+        <div class="row">
+        <div class="event-list col s6" id="events">
+            Check out these events
+        </div>
+        <div class="hotel-motel col s6"></div>
     </div>
-    <div class="hotel-motel"></div>
+    </div>
     <footer>
-        Do we need a footer?
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
