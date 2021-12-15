@@ -88,8 +88,7 @@ var getHotelLocation = function(){
     getHotels(data)
 
 })
-// .catch(err => {
-// 	console.error(err);
+
 }
 
 // this function is the one to get the name of the hotels 
@@ -122,10 +121,10 @@ var getHotels = function(data){
 var hotels = document.querySelector(".hotel-motel")
 //make a function to get the data from the hotels on the screen
 var showHotels = function(data){
-    var hotelResults = data.data.body.searchResults.results[0]
-    for (var i = 0; i < hotelResults.name.length; i++) {
+    
+    for (var i = 0; i < 5; i++) {
         // Create a list element
-        
+        var hotelResults = data.data.body.searchResults.results[i]
         var listItem = document.createElement('li');
         var hotelName = document.createElement('p')
         var hotelAddress = document.createElement('p')
@@ -137,8 +136,8 @@ var showHotels = function(data){
 
         hotelName.innerHTML = `<a href=${hotelResults.optimizedThumbUrls.srpDesktop}>${hotelResults.name}</a>`
         //just got object object will have to stringify
-        hotelAddress.textContent = hotelResults.address
-        hotelStar.textContent = hotelResults.starrating
+        hotelAddress.textContent = JSON.stringify(hotelResults.address.streetAddress)
+        hotelStar.textContent = JSON.stringify(hotelResults.starRating)
 
         
         
