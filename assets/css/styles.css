@@ -11,6 +11,10 @@ h1 {
     border: blue 6px solid;
 }
 
+h1 ul{
+    display: inline;
+}
+
 /*styling for website description*/
 .description {
     text-align: center;
