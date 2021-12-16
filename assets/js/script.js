@@ -4,6 +4,7 @@ var eventList = document.querySelector(".event-list")
 // this one if to grab whatever is input into our input box
 var cityInput = document.querySelector("#city-input")
 var weatherEl = document.querySelector(".weather")
+var cityBtns = document.querySelector(".citybtns")
 
 
 //creating a function to fetch the open weather api, I used this one because the search parameters are citys not longitude and latitude
@@ -17,9 +18,11 @@ var getWeather = function () {
             console.log(data)
             // got the current weather on the page was going to make the weather for the day of the event appear but that is an api we'd need to pay for so f that.
             displayWeather(data)
+
         })
 
 }
+
 // this is to display the weather. I want to create elements then put in the data and then append 
 //to the header
 function displayWeather(data) {
@@ -36,10 +39,42 @@ function displayWeather(data) {
     humidityEl.textContent = "Humidity: " + `${data.main.humidity}` + "%"
     header.innerHTML = "Current weather in " + `${data.name}` + `<img src=http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png>`;
     weatherEl.append(temperatureEl, windSpeedEl, humidityEl)
-
+    
+    saveCity(data.name)
+    cityButtons()
 
 
 }
+var saveCity = function (city) {
+    var storage = window.localStorage
+    //apparently this is an array but I don't see how
+    var citiesArray = Object.keys(storage)
+    console.log(citiesArray)
+    //if cities array doesn't include the city we set it in local storage 
+    if (!citiesArray.includes(city)) {
+        localStorage.setItem(`${city}`, city)
+
+    }
+
+}
+var cityButtons = function () {
+    cityBtns.innerHTML = ""
+    var storage = window.localStorage
+    var citiesArray = Object.keys(storage)
+
+    for (var i = 0; i < citiesArray.length; i++) {
+        var createBtn = document.createElement("button")
+        createBtn.innerText = citiesArray[i]
+        createBtn.value = citiesArray[i]
+        createBtn.className = "btn1"
+        createBtn.onclick = doBoth
+        cityBtns.append(createBtn)
+    }
+
+
+}
+
+
 // this function is to grab the event and put them on the page 
 var getEvent = function (event) {
     console.log(event.target)
@@ -53,7 +88,7 @@ var getEvent = function (event) {
         })
         .then(function (data) {
             console.log(data)
-           displayEvents(data)
+            displayEvents(data)
             //the for loop is so it runs through all the urls of the event and puts them on the page
 
 
@@ -71,7 +106,10 @@ var displayEvents = function (data) {
         eventList.appendChild(listItem);
 
     }
+
 }
+
+
 
 // fetch("https://hotels-com-provider.p.rapidapi.com/v1/hotels/search?checkin_date=2022-03-26&checkout_date=2022-03-27&sort_order=STAR_RATING_HIGHEST_FIRST&destination_id=1708350&adults_number=1&locale=en_US&currency=USD&children_ages=4%2C0%2C15&price_min=10&star_rating_ids=3%2C4%2C5&accommodation_ids=20%2C8%2C15%2C5%2C1&price_max=500&page_number=1&theme_ids=14%2C27%2C25&amenity_ids=527%2C2063&guest_rating_min=4", {
 // so I need a function just to call the api to get the destinationid because one
@@ -120,7 +158,7 @@ var getHotels = function (data) {
             console.log(data)
             showHotels(data)
             //got the last of
-        
+
 
 
             // .catch(err => {
@@ -166,7 +204,9 @@ var doBoth = function (event) {
     getHotelLocation()
     getEvent(event)
     getWeather(event)
-    
+
+
+
 }
 
 
