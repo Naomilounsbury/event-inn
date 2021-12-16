@@ -31,7 +31,7 @@ function getWeather(event) {
 function displayWeather(data) {
     weatherEl.innerHTML = ""
 
-    var header = document.createElement('h2')
+    var header = document.createElement('h5')
     weatherEl.append(header)
 
     var temperatureEl = document.createElement('p')
@@ -69,7 +69,7 @@ function cityButtons() {
         var createBtn = document.createElement("button")
         createBtn.innerText = citiesArray[i]
         createBtn.value = citiesArray[i]
-        createBtn.className = "btn1"
+        createBtn.className = "waves-effect grey btn-small"
         createBtn.setAttribute("data-cityNames", citiesArray[i])
         createBtn.onclick = clickBtns;
         cityBtns.append(createBtn)
@@ -102,13 +102,17 @@ function getEvent(event) {
 function displayEvents (data) {
     console.log(eventList)
     eventList.innerHTML = ""
-    for (var i = 0; i < data._embedded.events.length; i++) {
+    var header = document.createElement("h5")
+    header.textContent = "Events"
+    eventList.append(header)
+    for (var i = 0; i < 10; i++) {
         // Create a list element
         var listItem = document.createElement('li');
 
         // so here we are using innerhtml because intertext and textcontent don't allow us to add html elements in with dynamically generated titles and links
         listItem.innerHTML = `<a href=${data._embedded.events[i].url}>${data._embedded.events[i].name}</a>`;
         eventList.appendChild(listItem);
+        listItem.className = "collection hoverable"
 
     }
 
@@ -165,8 +169,6 @@ function getHotels (data) {
             showHotels(data)
             //got the last of
 
-
-
         
         });
 }
@@ -174,28 +176,28 @@ function getHotels (data) {
 //make a function to get the data from the hotels on the screen
 function showHotels (data) {
     hotels.innerHTML = ""
+    
+    var header = document.createElement("h5")
+    header.textContent = "Hotels"
+    hotels.append(header)
+
 
     for (var i = 0; i < 5; i++) {
         // Create a list element
         var hotelResults = data.data.body.searchResults.results[i]
         var listItem = document.createElement('li');
+        listItem.className = "collection hoverable"
         var hotelName = document.createElement('p')
         var hotelAddress = document.createElement('p')
         var hotelStar = document.createElement('p')
-
-
 
         // so here we are using innerhtml because intertext and textcontent don't allow us to add html elements in with dynamically generated titles and links
         // listItem.innerHTML = `<a href=${data._embedded.events[i].url}>${data._embedded.events[i].name}</a>`;
 
         hotelName.innerHTML = `<a href=https://hotels.com/ho${hotelResults.id}/?q-check-in=2021-12-17&q-check-out=2021-12-18>${hotelResults.name}</a>`
         //just got object object will have to stringify
-        hotelAddress.textContent = JSON.stringify(hotelResults.address.streetAddress)
-        hotelStar.textContent = JSON.stringify(hotelResults.starRating)
-
-
-
-
+        hotelAddress.textContent = "Address: " + JSON.stringify(hotelResults.address.streetAddress)
+        hotelStar.textContent = "Star Rating: " + JSON.stringify(hotelResults.starRating) + "/5"
         hotels.appendChild(listItem);
         listItem.append(hotelName, hotelAddress, hotelStar)
     }

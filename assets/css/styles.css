@@ -2,10 +2,15 @@
     color: white;
     background-color:rgb(65,65,65);
 }
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
 
 /* styling for main header */
 
-header {
+/* header {
     padding: 20px 35px;
     border: blue solid 2px;
     margin-bottom: 2%;
@@ -31,17 +36,17 @@ header {
 
   header nav ul li {
     display: inline
-  }
+  } */
 
-  header nav ul li a {
+  /* header nav ul li a {
     margin: 0 30px;
     font-weight: lighter;
     font-size: 18px;
-  }
+  } */
 
 
 /*backround image styling on main page*/
-.container{
+/* .container{
      background-image: url(../images/concertimage.jpg);
      height: 400px;
      width: 100%;
@@ -49,10 +54,10 @@ header {
      background-position: center;
      position: relative;
      margin-bottom: 4%;
- }
+ } */
 
  /*Styling on the search form*/
- .form{
+ /* .form{
     border: 4px solid blue;
     background-color:rgb(65,65,65);
     padding: 20px;
@@ -65,14 +70,14 @@ header {
     text-align:center;
     margin: 5%;
     flex-wrap: wrap;
-  }
+  } */
 
   /*Styling About us section*/
   .about-us {
-      margin: 10px;
+      /* margin: 10px;
       padding: 20px;
-      height: 200px;
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      height: 200px; */
+      /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       font-size: large;
       border: blue 3px solid;
       color: #ffffff;
@@ -83,51 +88,51 @@ header {
     color: blueviolet;
   }
 
-  .weather {
-    margin: 10px;
+  .weather { */
+    /* margin: 10px;
     padding: 20px;
-    height: 200px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: large;
-    border: blue 3px solid;
-    color: #ffffff;
-    text-align: center;
+    height: 200px; */
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large; */
+    /* border: blue 3px solid; */
+    /* color: #ffffff;
+    text-align: center; */
 }
 
-  .event-list {
-  margin: 10px;
+  /* .event-list { */
+  /* margin: 10px;
   padding: 20px;
-  height: 200px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: large;
-  border: blue 3px solid;
-  color: #ffffff;
-  text-align: center;
+  height: 200px; */
+  /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: large; */
+  /* border: blue 3px solid; */
+  /* color: #ffffff;
+  text-align: center; */
 }
 
-.hotel-motel {
-  margin: 10px;
+/* .hotel-motel { */
+  /* margin: 10px;
   padding: 20px;
-  height: 200px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: large;
-  border: blue 3px solid;
-  color: #ffffff;
+  height: 200px; */
+  /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: large; */
+  /* border: blue 3px solid; */
+  /* color: #ffffff;
   text-align: center;
-}
+} */
   
 
   /*button styling*/
-.btn1{
+/* .btn1{
     cursor: pointer;
     background-color: blue;
 }
 li{
     padding:16px;
-}
+} */
 
-footer {
+/* footer {
   border: blue 2px solid;
   text-align: center;
   font-weight: bold;
-}
+} */
