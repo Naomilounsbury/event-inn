@@ -1,23 +1,39 @@
 # Events App
 
-## Project description
-    Description goes here!
+## Table of Contents
+  - [About Our Project](#about-our-project)
+  - [Screenshot](#screenshot)
+  - [Project link](#project-link)
+  - [User Story?](#user-story)
+  - [Project Mockup](#project-mockup)
+  - [Resources](#resources)
+  - [Contributors](#contributors)
+## About Our Project
+Our website is designed to find events, and nearby hotels when you enter your desired destination city. 
+
 ## Table of contents
+
 ## Screenshot
-    ![Alt text]( "Event App Screenshot")
+![Website Screenshot](assets/screenshots/page-screenshot.png)
+
 ## Project link
-    [Event App!]()
+[follow me](https://nbrown225.github.io/Project1/)
+
 ## User Story?
+
 ## Project Mockup
 ![Main Page Mockup](./assets/screenshots/main-page-mockup.png)
-![Hotel Page Mockup](./assets/screenshots/hotel-page-mockup.png)
+
 ## Resources
 -   Ghithub
 -   VS Code
 -   Gitbash
--   Google Slides - for mockup
+-   Google Slides - for mockup and powerpoint
+-   Foundation - for CSS
+-   Cloudflare - CDN
+  
 ## Contributors
     Laura Jazmin Anderson 
     Naomi Lounsbury
     Christina Brown
-    Joshua Moffet
+    
