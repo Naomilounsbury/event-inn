@@ -169,8 +169,6 @@ function getHotels (data) {
             showHotels(data)
             //got the last of
 
-
-
         
         });
 }
@@ -192,8 +190,6 @@ function showHotels (data) {
         var hotelName = document.createElement('p')
         var hotelAddress = document.createElement('p')
         var hotelStar = document.createElement('p')
-
-
 
         // so here we are using innerhtml because intertext and textcontent don't allow us to add html elements in with dynamically generated titles and links
         // listItem.innerHTML = `<a href=${data._embedded.events[i].url}>${data._embedded.events[i].name}</a>`;
