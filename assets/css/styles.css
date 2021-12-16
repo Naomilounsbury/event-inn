@@ -129,4 +129,5 @@ li{
 footer {
   border: blue 2px solid;
   text-align: center;
+  font-weight: bold;
 }
