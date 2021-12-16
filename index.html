@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event Planner</title>
     <link rel="stylesheet" href="./assets/css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/foundation.css">
 </head>
 
 <body>
@@ -42,8 +42,11 @@
     </div>
 
     <div class="about-us" id="about-us">
-        <h3>About Us</h3>
-        <h4>Planning your trips just got easier!</h4>
+        <h3>
+            <strong>About Us</strong>
+        </h3>
+        <blockquote>Planning your trips just got easier!</blockquote>
+        </h4>
         <p>We understand that planning for your travel can be stressful enough. Going through multiple websites to find the events you want to attend, and booking your hotels can be time consuming. 
             Our websie is designed to make your user experience much simpler and easier by being able to access it all in one place. 
             Just enter the name of the city you are planning to travel to, and we will give you suggestions of all the events in that city.
@@ -51,13 +54,24 @@
         </p>
     </div>
 
-    <div class="weather"></div>
-    <div class="event-list">
-        Check out these events
+    <div class="weather" id="weather">
+    <h3>
+        <strong>5 day Forecast</strong>
+    </h3>
     </div>
-    <div class="hotel-motel"></div>
+    <div class="event-list" id="event-list">
+        <h3>
+            <strong>Check out these events: </strong>
+        </h3>
+    </div>
+    <div class="hotel-motel" id="hotel-motel">
+        <h3>
+            <strong>Available hotels near by: </strong>
+        </h3>
+    </div>
     <footer>
-        Do we need a footer?
+        &copy;Events Look Up 2021
+        <p>Contact us: 510-667-8990</p>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
