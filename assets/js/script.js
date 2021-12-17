@@ -196,7 +196,8 @@ function showHotels (data) {
 
         hotelName.innerHTML = `<a href=https://hotels.com/ho${hotelResults.id}/?q-check-in=2021-12-17&q-check-out=2021-12-18>${hotelResults.name}</a>`
         //just got object object will have to stringify
-        hotelAddress.textContent = "Address: " + JSON.stringify(hotelResults.address.streetAddress)
+        hotelAddress.textContent = "Address: " + hotelResults.address.streetAddress
+        console.log(hotelResults.address.streetAddress, hotelResults.starRating)
         hotelStar.textContent = "Star Rating: " + JSON.stringify(hotelResults.starRating) + "/5"
         hotels.appendChild(listItem);
         listItem.append(hotelName, hotelAddress, hotelStar)

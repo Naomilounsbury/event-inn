@@ -73,7 +73,7 @@ li {
   } */
 
   /*Styling About us section*/
-  .about-us {
+  /* .about-us { */
       /* margin: 10px;
       padding: 20px;
       height: 200px; */
@@ -97,7 +97,7 @@ li {
     /* border: blue 3px solid; */
     /* color: #ffffff;
     text-align: center; */
-}
+/* } */
 
   /* .event-list { */
   /* margin: 10px;
@@ -108,7 +108,7 @@ li {
   /* border: blue 3px solid; */
   /* color: #ffffff;
   text-align: center; */
-}
+/* } */
 
 /* .hotel-motel { */
   /* margin: 10px;
@@ -131,8 +131,8 @@ li{
     padding:16px;
 } */
 
-/* footer {
-  border: blue 2px solid;
+footer {
+
   text-align: center;
   font-weight: bold;
-} */
+}

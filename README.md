@@ -14,7 +14,7 @@ Our website is designed to find events, and nearby hotels when you enter your de
 ## Table of contents
 
 ## Screenshot
-![Website Screenshot](assets/screenshots/page-screenshot.png)
+![Website Screenshot](assets/screenshots/updated-screenshot.png)
 
 ## Project link
 [follow me](https://nbrown225.github.io/Project1/)
