@@ -43,6 +43,13 @@ function displayWeather(data) {
     header.innerHTML = "Current weather in " + `${data.name}` + `<img src=http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png>`;
     weatherEl.append(temperatureEl, windSpeedEl, humidityEl)
     
+    // added classname to edit background
+    temperatureEl.className = "yellow"
+    windSpeedEl.className = "yellow"
+    humidityEl.className = "yellow"
+    header.className = "yellow"
+    img.className = "yellow"
+    
     saveCity(data.name)
     cityButtons()
 
@@ -113,6 +120,7 @@ function displayEvents (data) {
         listItem.innerHTML = `<a href=${data._embedded.events[i].url}>${data._embedded.events[i].name}</a>`;
         eventList.appendChild(listItem);
         listItem.className = "collection hoverable yellow"
+        header.className = "yellow"
 
     }
 
@@ -179,6 +187,7 @@ function showHotels (data) {
     
     var header = document.createElement("h5")
     header.textContent = "Hotels"
+    header.className = "yellow"
     hotels.append(header)
 
 
@@ -186,10 +195,15 @@ function showHotels (data) {
         // Create a list element
         var hotelResults = data.data.body.searchResults.results[i]
         var listItem = document.createElement('li');
-        listItem.className = "collection hoverable"
+        listItem.className = "collection hoverable yellow"
         var hotelName = document.createElement('p')
         var hotelAddress = document.createElement('p')
         var hotelStar = document.createElement('p')
+        
+        //added classname to edit background
+        hotelName.className = "yellow"
+        hotelAddress.className = "yellow"
+        hotelStar.className = "yellow"
 
         // so here we are using innerhtml because intertext and textcontent don't allow us to add html elements in with dynamically generated titles and links
         // listItem.innerHTML = `<a href=${data._embedded.events[i].url}>${data._embedded.events[i].name}</a>`;
