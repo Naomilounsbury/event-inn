@@ -1,7 +1,8 @@
 *{
-    color: white;
-    background-color:rgb(65,65,65);
+    color: black;
+    background-color:rgb(223, 143, 205);
 }
+
 li {
   list-style-type: none;
   margin: 0;
@@ -10,43 +11,46 @@ li {
 
 /* styling for main header */
 
-/* header {
+ header {
     padding: 20px 35px;
-    border: blue solid 2px;
+    border: black solid 4px;
     margin-bottom: 2%;
+    
   }
 
   header h1 {
     font-weight: bold;
     font-size: 36px;
-    color: #fff;
+    color: black;
     margin: 0;
     display: inline;
-  }
+      }
   
   header a {
     text-decoration: none;
-    color: #fff;
+    color: black;
   }
 
   header nav{
     float: right;
     margin: 7px 0;
+    
+    
+
   }
 
   header nav ul li {
-    display: inline
-  } */
+    display: inline;
+    
 
-  /* header nav ul li a {
-    margin: 0 30px;
-    font-weight: lighter;
-    font-size: 18px;
-  } */
+  } 
+  
+  
+  
+  */
 
-
-/*backround image styling on main page*/
-/* .container{
+  /*backround image styling on main page*/
+  .container{
      background-image: url(../images/concertimage.jpg);
      height: 400px;
      width: 100%;
@@ -54,10 +58,20 @@ li {
      background-position: center;
      position: relative;
      margin-bottom: 4%;
+  }
+
+   header nav ul li a {
+    margin: 0 30px;
+    font-weight: lighter;
+    font-size: 18px;
+  } */
+
+
+
  } */
 
  /*Styling on the search form*/
- /* .form{
+  .form{
     border: 4px solid blue;
     background-color:rgb(65,65,65);
     padding: 20px;
@@ -70,7 +84,8 @@ li {
     text-align:center;
     margin: 5%;
     flex-wrap: wrap;
-  } */
+  } 
+ 
 
   /*Styling About us section*/
   /* .about-us { */
@@ -110,15 +125,7 @@ li {
   text-align: center; */
 /* } */
 
-/* .hotel-motel { */
-  /* margin: 10px;
-  padding: 20px;
-  height: 200px; */
-  /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: large; */
-  /* border: blue 3px solid; */
-  /* color: #ffffff;
-  text-align: center;
+/*
 } */
   
 

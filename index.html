@@ -14,28 +14,26 @@
 <body>
     <div class="container">
         <header class="row">
-            <h1 class="col s12 center-align">Events Lookup</h1>
-            <form class="form col s6 card-panel grey darken-2">
-                <h4 class = "col s12 grey darken-2">Enter the name of the city you want to visit</h4>
-                    <label for="ecity" class=" col s12 center-align white-text grey darken-2">City Name</label>
+            <h1 class="col s12 center-align yellow">Events Lookup</h1>
+            <form class="form col s6 yellow">
+                <h4 class = "col s12 ">Enter the name of the city you want to visit</h4>
+                    <label for="ecity" class=" col s12 center-align white-te12 ">City Name</label>
                     <input type="text" name="ecity" id="city-input" onfocus="this.value=''">
-                    <button type="submit" class="btn1 col s4">Start Search</button>
+                    <button type="submit" class="btn1 col s4" id="city-btn">Start Search</button>
             </form>
             <nav class="col s6 card-panel">
                 <!--List Element-->
                 <ul class = "row">
-                    <li class="col s3 hoverable">
-                        <a href="#about-us">About Us</a>
+                    <li class="col s12 m6 l3 hoverable">
+                        <a href="#about-us">About</a>
                     </li>
-
-                    <li class="col s3 hoverable">
+                    <li class="col s12 m6 l3 hoverable">
                         <a href="#weather">Weather</a>
                     </li>
-
-                    <li class="col s3 hoverable">
+                    <li class="col s12 m6 l3 mhoverable">
                         <a href="#event-list">Events</a>
                     </li>
-                    <li class="col s3 hoverable">
+                    <li class="col s12 m6 l3 hoverable">
                         <a href="#hotel-motel">Hotels</a>
                     </li>
 
@@ -46,7 +44,7 @@
         <div class="row">
 
 
-            <div class="about-us col s12 card-panel grey darken-2 center-align" id="about-us">
+            <div class="about-us col s12  center-align" id="about-us">
             <h4>
                 About Us
             </h4>
@@ -59,20 +57,20 @@
             </p>
         </div>
         <div class="row">
-        <div class="weather col s12 card-panel grey darken-2 center-align" id="weather">
-                <h4 class="col s12">
+        <div class="weather col s12 card-panel yellow center-align" id="weather">
+                <h4 class="col s12 yellow">
                 Weather
                 </h4>
             </div>
         </div>
         <div class="row">
-            <div class="event-list col s6 card-panel grey darken-2" id="event-list">
-                <h4>
+            <div class="event-list col s12 m6 card-panel yellow " id="event-list">
+                <h4 class="yellow">
                 Check out These Events:
                 </h4>
             </div>
-            <div class="hotel-motel col s6 card-panel grey darken-2" id="hotel-motel">
-                <h4>
+            <div class="hotel-motel col s12 m6 card-panel yellow" id="hotel-motel">
+                <h4 class="yellow">
                 Hotels Nearby:
                 </h4>
             </div>
