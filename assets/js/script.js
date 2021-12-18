@@ -112,7 +112,7 @@ function displayEvents (data) {
         // so here we are using innerhtml because intertext and textcontent don't allow us to add html elements in with dynamically generated titles and links
         listItem.innerHTML = `<a href=${data._embedded.events[i].url}>${data._embedded.events[i].name}</a>`;
         eventList.appendChild(listItem);
-        listItem.className = "collection hoverable"
+        listItem.className = "collection hoverable yellow"
 
     }
 
