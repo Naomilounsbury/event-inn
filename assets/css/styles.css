@@ -7,7 +7,9 @@ li {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  width: 25%;
 }
+
 
 /* styling for main header */
 
@@ -44,7 +46,9 @@ li {
     
 
   } 
-  
+  img {
+    background-color: #ffeb3b;
+  }
   
   
   */
@@ -85,6 +89,8 @@ li {
     margin: 5%;
     flex-wrap: wrap;
   } 
+
+  
  
 
   /*Styling About us section*/
