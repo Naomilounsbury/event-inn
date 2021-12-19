@@ -16,7 +16,7 @@
         <header class="row">
             <h1 class="col s12 center-align yellow">Event Inn</h1>
             <form class="form col s6">
-                <h4 class = "col s12 ">Enter the name of the city you want to visit</h4>
+                <h4 class = "col s12 ">Enter a city to visit</h4>
                     <label for="ecity" class=" col s12 center-align white-te12 ">City Name</label>
                     <input type="text" name="ecity" id="city-input" onfocus="this.value=''">
                     <button type="submit" class="btn1 col s4" id="city-btn">Start Search</button>
@@ -24,7 +24,7 @@
             <nav class="col s6 card-panel">
                 <!--List Element-->
                 <ul class = "row">
-                    <li class="col s12 m6 l3 hoverable">
+                    <li class="col s12 m6 l3 center-align hoverable">
                         <a href="#about-us">About</a>
                     </li>
                     <li class="col s12 m6 l3 hoverable">
@@ -63,12 +63,13 @@
                 </h4>
             </div>
         </div>
-        <div class="row">
+        <div class="row" id="hotel-event-results">
             <div class="event-list col s12 m6 card-panel yellow " id="event-list">
                 <h4 class="yellow">
                 Check out These Events:
                 </h4>
             </div>
+        
             <div class="hotel-motel col s12 m6 card-panel yellow" id="hotel-motel">
                 <h4 class="yellow">
                 Hotels Nearby:
@@ -76,7 +77,7 @@
             </div>
         </div>
         <footer>
-            &copy;Events Look Up 2021
+            &copy;Events Inn 2021
             <p>Contact us: 510-667-8990</p>
         </footer>
     </div>

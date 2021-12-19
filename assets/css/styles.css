@@ -2,14 +2,20 @@
     color: black;
     background-color:rgb(223, 143, 205);
 }
-
 li {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-/* styling for main header */
+footer {
+
+  text-align: center;
+  font-weight: bold;
+}
+
+
+/* styling for main header *
 
  header {
     padding: 20px 35px;
@@ -49,7 +55,7 @@ li {
   
   */
 
-  /*backround image styling on main page*/
+  /*backround image styling on main page
   .container{
      background-image: url(../images/concertimage.jpg);
      height: 400px;
@@ -68,9 +74,9 @@ li {
 
 
 
- } */
 
- /*Styling on the search form*/
+
+ /*Styling on the search form*
   .form{
     border: 4px solid blue;
     background-color:rgb(65,65,65);
@@ -138,8 +144,3 @@ li{
     padding:16px;
 } */
 
-footer {
-
-  text-align: center;
-  font-weight: bold;
-}
