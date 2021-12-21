@@ -1,12 +1,47 @@
 *{
     color: black;
-    background-color:rgb(223, 143, 205);
+    background-color:darkblue;
 }
 li {
   list-style-type: none;
+  border-radius: 10px;
   margin: 0;
   padding: 0;
-  width: 25%;
+
+}
+
+form{
+  border-radius: 15px;
+
+}
+h1{
+  border-radius: 15px;
+}
+h4{
+  border-radius: 15px;
+}
+nav{
+  border-radius: 15px;
+}
+li{
+
+}
+.about-us{
+  border-radius: 15px;
+}
+.weather{
+  margin-top: 20px;
+  border-radius: 15px;
+}
+.event-list{
+  border-radius: 15px;
+}
+.hotel-motel{
+  border-radius: 15px;
+}
+img{
+  background-color: yellow;
+  border-radius: 15px;
 }
 
 footer {

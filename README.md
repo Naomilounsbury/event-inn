@@ -12,7 +12,7 @@
 Our website is designed to find events, and nearby hotels when you enter your desired destination city. 
 
 ## Screenshot
-![Website Screenshot](assets/screenshots/final-screenshot.png)
+![Website Screenshot](assets/screenshot/event-inn-screenshot)
 
 ## Project link
 [follow me](https://nbrown225.github.io/Project1/)
@@ -23,7 +23,7 @@ Our website is designed to find events, and nearby hotels when you enter your de
 ![Main Page Mockup](./assets/screenshots/main-page-mockup.png)
 
 ## Resources
--   Ghithub
+-   Github
 -   VS Code
 -   Gitbash
 -   Google Slides - for mockup and powerpoint

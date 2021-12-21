@@ -48,7 +48,7 @@ function displayWeather(data) {
     windSpeedEl.className = "yellow"
     humidityEl.className = "yellow"
     header.className = "yellow"
-    img.className = "yellow"
+    
     
     saveCity(data.name)
     cityButtons()
