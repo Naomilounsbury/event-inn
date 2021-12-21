@@ -12,7 +12,7 @@
 Our website is designed to find events, and nearby hotels when you enter your desired destination city. 
 
 ## Screenshot
-![Website Screenshot](assets/screenshot/event-inn-screenshot)
+![Website Screenshot](assets/screenshots/event-inn-screenshot.png)
 
 ## Project link
 [follow me](https://nbrown225.github.io/Project1/)
