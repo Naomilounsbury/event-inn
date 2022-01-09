@@ -44,10 +44,10 @@ function displayWeather(data) {
     weatherEl.append(temperatureEl, windSpeedEl, humidityEl)
     
     // added classname to edit background
-    temperatureEl.className = "yellow"
-    windSpeedEl.className = "yellow"
-    humidityEl.className = "yellow"
-    header.className = "yellow"
+    temperatureEl.className = "grey lighten-1"
+    windSpeedEl.className = "grey lighten-1"
+    humidityEl.className = "grey lighten-1"
+    header.className = "grey lighten-1"
     
     
     saveCity(data.name)
@@ -119,8 +119,8 @@ function displayEvents (data) {
         // so here we are using innerhtml because intertext and textcontent don't allow us to add html elements in with dynamically generated titles and links
         listItem.innerHTML = `<a href=${data._embedded.events[i].url}>${data._embedded.events[i].name}</a>`;
         eventList.appendChild(listItem);
-        listItem.className = "collection hoverable yellow"
-        header.className = "yellow"
+        listItem.className = "collection hoverable grey lighten-1"
+        header.className = "grey lighten-1"
 
     }
 
@@ -187,7 +187,7 @@ function showHotels (data) {
     
     var header = document.createElement("h5")
     header.textContent = "Hotels"
-    header.className = "yellow"
+    header.className = "grey lighten-1"
     hotels.append(header)
 
 
@@ -195,15 +195,15 @@ function showHotels (data) {
         // Create a list element
         var hotelResults = data.data.body.searchResults.results[i]
         var listItem = document.createElement('li');
-        listItem.className = "collection hoverable yellow"
+        listItem.className = "collection hoverable grey lighten-1"
         var hotelName = document.createElement('p')
         var hotelAddress = document.createElement('p')
         var hotelStar = document.createElement('p')
         
         //added classname to edit background
-        hotelName.className = "yellow"
-        hotelAddress.className = "yellow"
-        hotelStar.className = "yellow"
+        hotelName.className = "grey lighten-1"
+        hotelAddress.className = "grey lighten-1"
+        hotelStar.className = "grey lighten-1"
 
         // so here we are using innerhtml because intertext and textcontent don't allow us to add html elements in with dynamically generated titles and links
         // listItem.innerHTML = `<a href=${data._embedded.events[i].url}>${data._embedded.events[i].name}</a>`;

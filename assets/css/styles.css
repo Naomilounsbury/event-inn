@@ -1,6 +1,6 @@
 *{
     color: black;
-    background-color:darkblue;
+    background-color:cyan;
 }
 li {
   list-style-type: none;
@@ -23,8 +23,8 @@ h4{
 nav{
   border-radius: 15px;
 }
-li{
-
+nav ul a{
+  color: black;
 }
 .about-us{
   border-radius: 15px;
@@ -40,7 +40,7 @@ li{
   border-radius: 15px;
 }
 img{
-  background-color: yellow;
+  background-color: lightgrey;
   border-radius: 15px;
 }
 
